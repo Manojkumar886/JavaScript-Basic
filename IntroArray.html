@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayIntroduction</title>
+    <script>
+        console.log('Script is woring')
+        let hai=[];
+        let hello=new Array()
+        //push,pop,lengh,filter,map
+        hai.push(9789);
+        hai.push("Manojkumar")
+        hai.push(false)
+
+        hello.push("Zealous")
+        hello.push(99)
+        hello.push(8.9)
+        hello.push(1.2)
+        hello.push(true)
+        hello.push(12.9)
+
+        // alert(hai.length+" connected two idiots "+hello.length)
+
+        // for(pos=0;pos<hai.length;pos++)
+        // {
+        //     alert( hai[pos])
+        // }
+
+        // function yet(data)//normal function
+        // {
+        //     alert(data)
+        // }
+        // hello.map(yet)
+
+        // hello.map((data)=>
+        // {
+        //     document.writeln(data+"<br>")
+        // })
+
+        // hai.pop()// pop always delete top element
+        // hai.map((data)=>{
+        //     document.write("<h1>"+data+"</h1>")
+        // })
+
+        let user=prompt("tell us position to delete: ","")
+        hello=hello.filter((v,i1)=>{
+            return v!==hello[user]
+        })
+        document.write('after deletion')
+        hello.map((data)=>{
+            document.writeln("<h1>"+data+"</h1>")
+        })
+
+        // hai.map((data)=>
+        // {
+        //     alert(hai)
+        // })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
